@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 const Sequelize = require('sequelize')
-const Producto = require('../models').producto
+const Producto1 = require('../models').producto1
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,7 +10,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/productos', function(req, res, next) {
-   Producto.findAll({  
+  console.log(db1)
+   Producto1.findAll({  
         attributes: { exclude: ["updatedAt"] }  
     })  
     .then(productos => {  

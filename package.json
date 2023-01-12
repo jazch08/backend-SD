@@ -4,7 +4,16 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "devstart": "nodemon ./bin/www"
+    "devstart": "nodemon ./bin/www",
+    "sequelize:database1:migrate": "sequelize --options-path ./.sequelize-database1 --env Database1 db:migrate",
+    "sequelize:database1:migrate:undo": "sequelize --options-path ./.sequelize-database1 --env Database1 db:migrate:undo",
+    "sequelize:database1:seed:all": "sequelize --options-path ./.sequelize-database1 --env Database1 db:seed:all",
+    "sequelize:database2:migrate": "sequelize --options-path ./.sequelize-database2 --env Database2 db:migrate",
+    "sequelize:database2:migrate:undo": "sequelize --options-path ./.sequelize-database2 --env Database2 db:migrate:undo",
+    "sequelize:database2:seed:all": "sequelize --options-path ./.sequelize-database2 --env Database2 db:seed:all",
+    "sequelize:database3:migrate": "sequelize --options-path ./.sequelize-database3 --env Database3 db:migrate",
+    "sequelize:database3:migrate:undo": "sequelize --options-path ./.sequelize-database3 --env Database3 db:migrate:undo",
+    "sequelize:database3:seed:all": "sequelize --options-path ./.sequelize-database3 --env Database3 db:seed:all"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -18,6 +27,7 @@
     "sequelize": "^6.21.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "sequelize-cli": "^6.5.2"
   }
 }

@@ -1,10 +1,28 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "misitio",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "databases": {
+      "Database1": {
+        "username": "root",
+        "password": "pass1234",
+        "database": "misitio1",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+      },
+      "Database2": {
+        "username": "root",
+        "password": "pass1234",
+        "database": "misitio2",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+      },
+      "Database3": {
+        "username": "root",
+        "password": "pass1234",
+        "database": "misitio3",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+      }
+    }
   },
   "test": {
     "username": "root",
@@ -17,6 +35,27 @@
     "username": "root",
     "password": null,
     "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "Database1": {
+    "username": "root",
+    "password": "pass1234",
+    "database": "misitio1",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "Database2": {
+    "username": "root",
+    "password": "pass1234",
+    "database": "misitio2",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "Database3": {
+    "username": "root",
+    "password": "pass1234",
+    "database": "misitio3",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
