@@ -5,21 +5,21 @@
         "username": "root",
         "password": "pass1234",
         "database": "misitio1",
-        "host": "127.0.0.1",
+        "host": "database-1.cjl0fcvrrhmi.us-east-1.rds.amazonaws.com",
         "dialect": "mysql"
       },
       "Database2": {
         "username": "root",
         "password": "pass1234",
         "database": "misitio2",
-        "host": "127.0.0.1",
+        "host": "database-2.cjl0fcvrrhmi.us-east-1.rds.amazonaws.com",
         "dialect": "mysql"
       },
       "Database3": {
         "username": "root",
         "password": "pass1234",
         "database": "misitio3",
-        "host": "127.0.0.1",
+        "host": "database-3.cjl0fcvrrhmi.us-east-1.rds.amazonaws.com",
         "dialect": "mysql"
       }
     }
@@ -32,31 +32,49 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "databases": {
+      "Database1": {
+        "username": "root",
+        "password": "pass1234",
+        "database": "misitio1",
+        "host": "database-1.cjl0fcvrrhmi.us-east-1.rds.amazonaws.com",
+        "dialect": "mysql"
+      },
+      "Database2": {
+        "username": "root",
+        "password": "pass1234",
+        "database": "misitio2",
+        "host": "database-2.cjl0fcvrrhmi.us-east-1.rds.amazonaws.com",
+        "dialect": "mysql"
+      },
+      "Database3": {
+        "username": "root",
+        "password": "pass1234",
+        "database": "misitio3",
+        "host": "database-3.cjl0fcvrrhmi.us-east-1.rds.amazonaws.com",
+        "dialect": "mysql"
+      }
+    }
   },
   "Database1": {
     "username": "root",
     "password": "pass1234",
     "database": "misitio1",
-    "host": "127.0.0.1",
+    "host": "database-1.cjl0fcvrrhmi.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "Database2": {
     "username": "root",
     "password": "pass1234",
     "database": "misitio2",
-    "host": "127.0.0.1",
+    "host": "database-2.cjl0fcvrrhmi.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "Database3": {
     "username": "root",
     "password": "pass1234",
     "database": "misitio3",
-    "host": "127.0.0.1",
+    "host": "database-3.cjl0fcvrrhmi.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }

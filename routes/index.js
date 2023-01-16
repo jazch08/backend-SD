@@ -10,7 +10,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/productos', function(req, res, next) {
-  console.log(db1)
    Producto1.findAll({  
         attributes: { exclude: ["updatedAt"] }  
     })  

@@ -2,8 +2,8 @@
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    for (let i = 1; i <=400; i++) {  
-      await queryInterface.bulkInsert('productos', [{  
+    for (let i = 800; i <=1201; i++) {  
+      await queryInterface.bulkInsert('productos', [{
           nombre: 'Producto '+i,  
           cantidad: 10+i,  
           createdAt: new Date(),  
